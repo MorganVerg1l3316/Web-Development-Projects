@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MorganWoodward Edumax News Page -  Admin View</title>
+        <meta name="author" content="Morgan Woodward">
+        <meta name= "Description" content="A page to allow Administrators to edit and add news content">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="./css/bootstrap.min.css">
+         <link rel="stylesheet" href="./css/custom.css">
+    </head>
+    <body>
+       <div class="container">
+            <header>
+                <!--Header content goes here-->
+                <!-- Row 1-->
+                <div class="row">
+                    <div class="col">
+                        <!-- Logo -->
+                         <img src="./images/EduMax_logo.png" alt="Edumax logo" class="img-fluid">
+                    </div>
+                    <div class="col">
+                        <!-- Site name -->
+                         <h1>EduMax</h1>
+                    </div>
+                    <div class="col text-end">
+                        <!-- Login button -->
+                         <a class="btn btn-primary m-2" href="Placeholder" role="button">Logout</a>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="row g-0 bg-dark">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg p-2" data-bs-theme="dark">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="navbar-nav">
+                                    <!-- Primary navigation goes here-->
+                                     <a class="nav-link" href="Placeholder">Home</a>
+                                     <a class="nav-link" href="Placeholder">News</a>
+                                     <a class="nav-link" href="Placeholder">Catalogue</a>
+                                     <a class="nav-link" href="Placeholder">Learning Events</a>
+                                     <a class="nav-link" href="Placeholder">Memberships</a>
+                                     <a class="nav-link active" aria-current="page" href="../index.html">News</a>
+                                     <a class="nav-link" href="Placeholder">Announcements</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col">
+                        <!-- search box -->
+                         <form class="d-flex p-2" role="search">
+                            <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                            <button class="btn btn-outline-info" type="submit">Search</button>
+                         </form>
+                    </div>
+                </div>
+            </header>
+            <!-- Row 3--> <br>
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                        <!-- Searching section-->
+                           <h3>Search for news article</h3><br>
+
+                            <form role="search" class="text-start">
+                                <input class="form-control me-2" type="search" placeholder="search" aria-label="search">
+                                <br>
+                                <button class="btn btn-primary" type="submit">Search</button>
+                            </form><br>
+
+                            <p>Server maintainence - Description: lorem ipsum dolor sit amet, 
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                                mollit anim id est laborum.
+                            </p>
+
+                            <p>   Date to be shown</p>
+                            <p>   Date to last be shown</p>
+
+                            <br>
+                            <div class="row">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Make changes to this news article</button>
+                            </div>
+                            
+                            <br>
+
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-danger">Delete article</button>
+                            </div>
+                            
+                        </div>
+                        <div class="col">
+                        <br>
+                        <!--Add News section-->
+                        <h2>Add News</h2>
+                        <br>
+                        <form action="/https://students.open.ac.uk/mct/tm252/reflect/reflect.php." method="post">
+                            <div class="form-group">
+                                <label for="Title">Add a title</label>
+                                <input class="form-control input-sm" type="text" id="Title" placeholder="Server maintainence">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="Content">Add content</label><br>
+                                <textarea cols="70" id="Content" placeholder="lorem ipsum - There  will be maintainence"></textarea>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="Shown-date">Date to be shown</label>
+                                <input class="form-control input-sm" type="date" id="Shown-date">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="End-date">Date for last showing</label>
+                                <input class="form-control input-sm" type="date" id="End-date">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label for="Subject">Subject</label>
+                                <input class="form-control input-sm" type="text" id="Subject" placeholder="IT support team">
+                                <input type="hidden" id="itemID" value="10002000-3000-123456abcdef">
+                            </div>
+                            <br>
+                            <button type="button" class="btn btn-success">Submit News Article</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                 <div class="row me-0">
+                    <div class="col">
+                        <nav class="nav">
+                            <!-- secondary navigation to go here-->
+                             <a class="nav-link" href="Placeholder">Privacy</a>
+                             <a class="nav-link" href="Placeholder">About Us</a>
+                             <a class="nav-link" href="Placeholder">Support</a>
+                        </nav>
+                    </div>
+                    <div class="col text-end">
+                        <!-- Copyright notice-->
+                         <p>&copy; EduMax 2024</p>
+                    </div>
+                 </div>
+            </footer>
+        </div>
+        <script src="../js/bootstrap.min.js"></script>
+    </body>
+</html>
