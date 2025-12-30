@@ -1,1 +1,2 @@
-# Repository for projects related to Web-Development created at University
+# Repository for projects related to Web-Development 
+- The News page was created during my Web Dev Module at University
